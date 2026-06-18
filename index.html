@@ -10,6 +10,9 @@
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 
+    <!-- AOS animazione -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
@@ -131,7 +134,7 @@
                     <a href="esperienze_copia.html">Esperienze</a>
                     <a href="food_V1.html">Food</a>
                     <a href="eventi.html">Eventi</a>
-                    <a href="#">Merch</a>
+                    <!-- <a href="#">Merch</a> -->
                     <a href="contact.html">Contatti</a>
                 </div>
 
@@ -159,7 +162,7 @@
             <a class="mobile-menu-link" href="esperienze_copia.html">Esperienze</a>
             <a class="mobile-menu-link" href="food_V1.html">Food</a>
             <a class="mobile-menu-link" href="eventi.html">Eventi</a>
-            <a class="mobile-menu-link" href="#">Merch</a>
+            <!-- <a class="mobile-menu-link" href="#">Merch</a> -->
             <a class="mobile-menu-link" href="contact.html">Contatti</a>
         </nav>
         <a href="tel:+393891013881" class="mobile-prenota-btn mt-10 bg-[#1a4b9f] text-white px-10 py-4 rounded-full font-label-sm uppercase tracking-widest">
@@ -184,16 +187,16 @@
 
             <!-- Hero content -->
             <div class="relative z-10 text-center px-gutter container-max mx-auto">
-                <h1 class="fade-up font-display-xl text-white text-5xl md:text-7xl mb-2" data-delay="150" style="font-family:'Pristina',cursive;">
+                <h1 class="font-display-xl text-white text-5xl md:text-7xl mb-2" data-aos="fade-up" data-aos-duration="500" data-aos-delay="0" data-aos-easing="ease-in-out" style="font-family:'Pristina',cursive;">
                     <img src="/static/img/logobianco.svg" alt="Grotte Beach" class="h-24 md:h-36 w-auto mx-auto object-contain drop-shadow-xl" />
                 </h1>
-                <span class="fade-up font-label-sm text-white uppercase tracking-[0.4em] mb-6 block drop-shadow-md">
+                <span class="font-label-sm text-white uppercase tracking-[0.4em] mb-6 block drop-shadow-md" data-aos="fade-up" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-in-out">
                     Un piccolo paradiso della Sicilia
                 </span>
                 <!-- <h1 class="fade-up font-display-xl text-white mb-8 max-w-4xl mx-auto leading-none" data-delay="150">
                     Scopri la pace della <span class="text-white italic font-light">costa</span>
                 </h1> -->
-                <div class="fade-up flex flex-col md:flex-row gap-4 justify-center items-center" data-delay="300">
+                <div class="flex flex-col md:flex-row gap-4 justify-center items-center" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100" data-aos-easing="ease-in-out">
                     <button class="px-10 py-4 bg-[#1a4b9f] text-white rounded-full font-label-sm uppercase tracking-widest hover:bg-primary transition-colors shadow-xl" onclick="window.location.href='servizi.html'">
                         Esplora I Servizi
                     </button>
@@ -205,10 +208,10 @@
 
             <!-- Scroll indicator -->
             <div class="absolute bottom-12 left-1/2 -translate-x-1/2">
-                <div class="fade-up flex flex-col items-center gap-2">
-                    <span class="font-label-sm text-white/60 uppercase tracking-widest">Scorri in basso</span>
+                <div class="flex flex-col items-center gap-2">
+                    <span class="font-label-sm text-white/60 uppercase tracking-widest" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100" data-aos-easing="ease-in-out">Scorri in basso</span>
                     <div class="w-px h-12 bg-white/30 relative overflow-hidden">
-                        <div class="absolute inset-0 bg-white translate-y-full animate-bounce"></div>
+                        <div class="absolute inset-0 bg-white translate-y-full animate-bounce" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100" data-aos-easing="ease-in-out"></div>
                     </div>
                 </div>
             </div>
@@ -216,20 +219,20 @@
         </section>
 
         <!-- ===================== ABOUT SECTION ===================== -->
-        <section class="fade-up flex flex-col lg:flex-row min-h-screen lg:min-h-[88vh] bg-[#F2EEE9]"> 
+        <section class="flex flex-col lg:flex-row min-h-screen lg:min-h-[88vh] bg-[#F2EEE9]"> 
 
             <!-- Text half -->
             <div class="lg:w-1/2 flex items-center justify-center py-16 px-10 lg:px-16 xl:px-24">
                 <div class="space-y-8 max-w-lg">
                     <div class="space-y-4">
                         <span class="font-label-sm text-on-tertiary-container uppercase tracking-widest flex items-center gap-3">
-                            <span class="w-8 h-px bg-on-tertiary-container"></span>
+                            <span class="w-8 h-px bg-on-tertiary-container" data-aos="fade-up" data-aos-duration="500" data-aos-delay="0" data-aos-easing="ease-in-out"></span>
                             About Us
                         </span>
-                        <h2 class="font-headline-lg text-primary">La Nostra Storia</h2>
+                        <h2 class="font-headline-lg text-primary" data-aos="fade-up" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-in-out">La Nostra Storia</h2>
                     </div>
 
-                    <p class="font-body-lg text-xl leading-relaxed text-on-surface-variant">
+                    <p class="font-body-lg text-xl leading-relaxed text-on-surface-variant" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100" data-aos-easing="ease-in-out">
                         Grotte Beach nasce nel 1996, ai piedi del monte Giove, difronte alle Isole Eolie, nella riserva naturale di Tindari.<br />
                         Grotte Beach &egrave; un locale per le famiglie e per i giovani, da generazioni, che riscalda l'animo e trasmette il senso della tradizione.<br />
                         Sin dal mattino la cortesia, la cura del particolare e il contatto diretto con il mare, donano uno straordinario benessere e una dolce tranquillit&agrave; all'ospite
@@ -238,15 +241,15 @@
 
                     <!-- Stats -->
                     <div class="flex gap-12 pt-4">
-                        <div class="fade-up" data-delay="100">
+                        <div class="fade-up" data-aos="fade-in" data-aos-duration="500" data-aos-delay="0" data-aos-easing="ease-in-out">
                             <div class="font-headline-md text-primary mb-1">1996</div>
                             <div class="font-label-sm text-on-surface-variant/60 uppercase">Fondato</div>
                         </div>
-                        <div class="fade-up" data-delay="250">
+                        <div class="fade-up" data-aos="fade-in" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-in-out">
                             <div class="font-headline-md text-primary mb-1">30 anni</div>
                             <div class="font-label-sm text-on-surface-variant/60 uppercase">Esperienza</div>
                         </div>
-                        <div class="fade-up" data-delay="400">
+                        <div class="fade-up" data-aos="fade-in" data-aos-duration="500" data-aos-delay="100" data-aos-easing="ease-in-out">
                             <div class="font-headline-md text-primary mb-1">4,4</div>
                             <div class="flex items-center gap-0.5 mt-1">
                                 <span class="text-amber-400 text-base">&#9733;</span>
@@ -263,7 +266,7 @@
             </div>
 
             <!-- Video half -->
-            <div class="relative lg:w-1/2 min-h-[50vh] lg:min-h-0 overflow-hidden">
+            <div class="relative lg:w-1/2 min-h-[50vh] lg:min-h-0 overflow-hidden" data-aos="fade-in" data-aos-duration="500" data-aos-delay="0" data-aos-easing="ease-in-out">
                 <video
                     class="absolute inset-0 w-full h-full object-cover"
                     src="/static/videos/video_aboutus.mp4"
@@ -283,7 +286,7 @@
         <section class="fade-up min-h-screen flex flex-col justify-center py-xl bg-white">
         <div class="px-gutter container-max mx-auto w-full">
 
-            <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6" data-aos="fade-up" data-aos-duration="500" data-aos-delay="0" data-aos-easing="ease-in-out">
                 <div class="max-w-2xl">
                     <h2 class="font-headline-lg text-primary mb-4">Scopri Grotte Beach</h2>
                     <p class="font-body-lg text-on-surface-variant">Che tu stia cercando una caletta tranquilla o un pomeriggio vivace tra mare e cocktail, qui ti aspetta il posto giusto.</p>
@@ -297,7 +300,7 @@
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
 
                 <!-- Card: Attivita -->
-                <div class="experience-card group relative md:col-span-1 h-[600px] overflow-hidden rounded-[2rem] bg-surface-container-low shadow-sm cursor-pointer" data-href="esperienze_copia.html">
+                <div class="experience-card group relative md:col-span-1 h-[600px] overflow-hidden rounded-[2rem] bg-surface-container-low shadow-sm cursor-pointer" data-aos="fade-in" data-aos-duration="500" data-aos-delay="0" data-aos-easing="ease-in-out" data-href="esperienze_copia.html">
                     <img
                         class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                         src="/static/img/galleria_esperienze/canoa_faraglione.jpeg"
@@ -318,11 +321,11 @@
                 </div>
 
                 <!-- Card: Food -->
-                <div class="experience-card group relative md:col-span-1 h-[600px] overflow-hidden rounded-[2rem] bg-surface-container-low shadow-sm" data-href="food_V1.html">
+                <div class="experience-card group relative md:col-span-1 h-[600px] overflow-hidden rounded-[2rem] bg-surface-container-low shadow-sm" data-aos="fade-in" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-in-out" data-href="food_V1.html">
                     <img
                         class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                         src="/static/img/Food-GrotteBeach.jpg"
-                        alt="Piatti della cucina mediterranea"
+                        alt="Piatti della cucina mediterranea" 
                     />
                     <div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent"></div>
                     <div class="absolute bottom-0 p-10 w-full">
@@ -339,7 +342,7 @@
                 </div>
 
                 <!-- Card: Servizi -->
-                <div class="experience-card group relative md:col-span-1 h-[600px] overflow-hidden rounded-[2rem] bg-surface-container-low shadow-sm" data-href="servizi.html">
+                <div class="experience-card group relative md:col-span-1 h-[600px] overflow-hidden rounded-[2rem] bg-surface-container-low shadow-sm" data-aos="fade-in" data-aos-duration="500" data-aos-delay="100" data-aos-easing="ease-in-out" data-href="servizi.html">
                     <img
                         class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                         src="/static/img/EscursioniBarca2.png"
@@ -364,7 +367,7 @@
         </section>
 
         <!-- ===================== EREDITÀ MEDITERRANEA ===================== -->
-        <section class="fade-up overflow-hidden bg-[#faf9f8] py-xl">
+        <section class="overflow-hidden bg-[#faf9f8] py-xl">
 
             <!-- Split: testo sinistra, immagine destra -->
             <div class="flex flex-col lg:flex-row" style="min-height: 88vh;">
@@ -382,15 +385,15 @@
                     </div> -->
 
                     <!-- Eyebrow -->
-                    <span class="font-label-sm text-[#1a4b9f] uppercase tracking-[0.3em] mb-5 block">Mongiove &middot; Sicilia</span>
+                    <span class="font-label-sm text-[#1a4b9f] uppercase tracking-[0.3em] mb-5 block" data-aos="fade-up" data-aos-duration="500" data-aos-delay="0" data-aos-easing="ease-in-out">Mongiove &middot; Sicilia</span>
 
                     <!-- Headline serif -->
-                    <h2 class="text-4xl lg:text-5xl xl:text-[3.5rem] font-bold text-[#1a4b9f] leading-tight mb-8" style="font-family: 'Libre Baskerville', Georgia, serif;">
+                    <h2 class="text-4xl lg:text-5xl xl:text-[3.5rem] font-bold text-[#1a4b9f] leading-tight mb-8" style="font-family: 'Libre Baskerville', Georgia, serif;" data-aos="fade-up" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-in-out">
                         Tradizione<br>Mediterranea<br>dal 1996
                     </h2>
 
                     <!-- Body -->
-                    <p class="font-body-lg text-on-surface-variant leading-relaxed mb-10 max-w-md">
+                    <p class="font-body-lg text-on-surface-variant leading-relaxed mb-10 max-w-md" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100" data-aos-easing="ease-in-out">
                         Da trent'anni accogliamo famiglie e viaggiatori sulle rive del Tirreno, tra le acque cristalline del mare di Mongiove e della Riserva Naturale di Marinello. Qui la tradizione siciliana si fonde con la bellezza del mare, regalando momenti autentici che restano nel cuore.
                     </p>
 
@@ -410,7 +413,7 @@
                 </div>
 
                 <!-- Pannello immagine -->
-                <div class="relative lg:w-[55%] min-h-[60vw] lg:min-h-0 overflow-hidden">
+                <div class="relative lg:w-[55%] min-h-[60vw] lg:min-h-0 overflow-hidden" data-aos="fade-up" data-aos-duration="500" data-aos-delay="0" data-aos-easing="ease-in-out">
                     <!-- Sfumatura laterale sinistra per blend morbido (desktop) -->
                     <div class="absolute left-0 inset-y-0 w-40 z-10 hidden lg:block pointer-events-none"
                          style="background: linear-gradient(to right, #faf9f8, transparent);"></div>
@@ -428,10 +431,10 @@
         <!-- ===================== fine EREDITÀ MEDITERRANEA ===================== -->
 
         <!-- ===================== IL LOCALE ===================== -->
-        <section class="locale-split fade-up relative overflow-hidden">
+        <section class="locale-split relative overflow-hidden">
 
             <!-- Immagine mobile (visibile solo su schermi < lg) -->
-            <div class="lg:hidden w-full" style="height: 52vw; min-height: 240px; max-height: 420px;">
+            <div class="lg:hidden w-full" style="height: 52vw; min-height: 240px; max-height: 420px;" data-aos="fade-up" data-aos-duration="500" data-aos-delay="0" data-aos-easing="ease-in-out">
                 <img
                     class="w-full h-full object-cover"
                     src="/static/img/header2.jpg"
@@ -440,7 +443,7 @@
             </div>
 
             <!-- Immagine desktop (posizione assoluta, dietro a tutto) -->
-            <div class="locale-split__bg hidden lg:block absolute inset-0 z-0">
+            <div class="locale-split__bg hidden lg:block absolute inset-0 z-0" data-aos="fade-up" data-aos-duration="500" data-aos-delay="0" data-aos-easing="ease-in-out">
                 <img
                     class="w-full h-full object-cover"
                     src="/static/img/header2.jpg"
@@ -464,11 +467,11 @@
                 <div class="hidden lg:block lg:w-[58%] flex-shrink-0"></div>
 
                 <!-- Pannello testo (destra) -->
-                <div class="locale-split__panel flex-1 bg-[#F2EEE9] flex items-center py-16 px-8 lg:px-14 xl:px-20">
+                <div class="locale-split__panel flex-1 bg-[#F2EEE9] flex items-center py-16 px-8 lg:px-14 xl:px-20" >
                     <div class="max-w-lg w-full space-y-10">
 
                         <!-- Intestazione -->
-                        <div class="space-y-4">
+                        <div class="space-y-4" data-aos="fade-up" data-aos-duration="500" data-aos-delay="0" data-aos-easing="ease-in-out">
                             <span class="font-label-sm text-on-tertiary-container uppercase tracking-widest flex items-center gap-3">
                                 <span class="w-10 h-px bg-current opacity-50 inline-block"></span>
                                 Il Locale
@@ -483,7 +486,7 @@
                         <div class="space-y-7">
 
                             <!-- Giardino Privato -->
-                            <div class="flex items-start gap-5 group">
+                            <div class="flex items-start gap-5 group" data-aos="fade-up" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-in-out">
                                 <div class="w-12 h-12 flex-shrink-0 rounded-xl bg-surface-container flex items-center justify-center group-hover:bg-primary transition-colors duration-300">
                                     <span class="material-symbols-outlined text-primary group-hover:text-white transition-colors duration-300">park</span>
                                 </div>
@@ -494,7 +497,7 @@
                             </div>
 
                             <!-- Spiaggia -->
-                            <div class="flex items-start gap-5 group">
+                            <div class="flex items-start gap-5 group" data-aos="fade-up" data-aos-duration="500" data-aos-delay="75" data-aos-easing="ease-in-out">
                                 <div class="w-12 h-12 flex-shrink-0 rounded-xl bg-surface-container flex items-center justify-center group-hover:bg-primary transition-colors duration-300">
                                     <span class="material-symbols-outlined text-primary group-hover:text-white transition-colors duration-300">beach_access</span>
                                 </div>
@@ -505,7 +508,7 @@
                             </div>
 
                             <!-- Zona Bar -->
-                            <div class="flex items-start gap-5 group">
+                            <div class="flex items-start gap-5 group" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100" data-aos-easing="ease-in-out">
                                 <div class="w-12 h-12 flex-shrink-0 rounded-xl bg-surface-container flex items-center justify-center group-hover:bg-primary transition-colors duration-300">
                                     <span class="material-symbols-outlined text-primary group-hover:text-white transition-colors duration-300">local_bar</span>
                                 </div>
@@ -527,7 +530,7 @@
         <!-- ===================== fine IL LOCALE ===================== -->
 
         <!-- ===================== GALLERY STEP (dual vertical) ===================== -->
-        <section class="gallery-dual fade-up mt-24" aria-label="Galleria fotografica Grotte Beach">
+        <section class="gallery-dual mt-24" aria-label="Galleria fotografica Grotte Beach" data-aos="fade-up" data-aos-duration="500" data-aos-delay="0" data-aos-easing="ease-in-out">
 
             <!-- Colonna sinistra — scorre verso l'alto -->
             <div class="gallery-dual__col">
@@ -562,25 +565,25 @@
         <!-- ===================== fine GALLERY STEP ===================== -->
 
         <!-- ===================== RISERVA NATURALE ===================== -->
-        <section class="fade-up py-xl bg-[#F2EEE9]">
+        <section class="py-xl bg-[#F2EEE9]">
             <div class="px-gutter container-max mx-auto w-full">
 
                 <div class="flex flex-col lg:flex-row items-center gap-16">
 
                     <!-- Testo -->
                     <div class="lg:w-1/2 space-y-6">
-                        <span class="font-label-sm text-primary uppercase tracking-[0.3em]">Natura &amp; Territorio</span>
-                        <h2 class="font-headline-lg text-primary leading-tight">Nel cuore della Riserva Naturale</h2>
-                        <p class="font-body-lg text-on-surface-variant leading-relaxed">
+                        <span class="font-label-sm text-primary uppercase tracking-[0.3em]" data-aos="fade-up" data-aos-duration="500" data-aos-delay="0" data-aos-easing="ease-in-out">Natura &amp; Territorio</span>
+                        <h2 class="font-headline-lg text-primary leading-tight" data-aos="fade-up" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-in-out">Nel cuore della Riserva Naturale</h2>
+                        <p class="font-body-lg text-on-surface-variant leading-relaxed" data-aos="fade-up" data-aos-duration="500" data-aos-delay="75" data-aos-easing="ease-in-out">
                             Grotte Beach si trova alle porte della <strong class="text-on-surface font-semibold">Riserva Naturale Dei Laghetti di Marinello</strong>, uno degli angoli più incontaminati della costa siciliana. Lagune e fondali cristallini convivono in armonia a pochi passi da noi, regalando uno scenario unico nel Mediterraneo.
                         </p>
-                        <p class="font-body-lg text-on-surface-variant leading-relaxed">
+                        <p class="font-body-lg text-on-surface-variant leading-relaxed" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100" data-aos-easing="ease-in-out">
                             Un contesto naturale protetto che amplifica ogni esperienza: ogni momento acquista un valore speciale immerso in questa biodiversità. Il titolare di Grotte Beach, Fausto Campana, racconta la riserva.
                         </p>
                     </div>
 
                     <!-- Video YouTube (facade: preview + play → apre YouTube) -->
-                    <div class="lg:w-1/2 w-full">
+                    <div class="lg:w-1/2 w-full" data-aos="fade-up" data-aos-duration="500" data-aos-delay="0" data-aos-easing="ease-in-out">
                         <a
                             href="https://www.youtube.com/watch?v=KgLXUoXJsiM&t=9s"
                             target="_blank"
@@ -631,7 +634,7 @@
             </div>
 
             <!-- Content -->
-            <div class="relative z-10 w-full">
+            <div class="relative z-10 w-full" data-aos="fade-up" data-aos-duration="500" data-aos-delay="0" data-aos-easing="ease-in-out">
 
                 <!-- Section header -->
                 <div class="text-center mb-16 px-gutter">
@@ -901,7 +904,7 @@
                 <div class="space-y-4">
                     <h5 class="font-label-sm uppercase tracking-widest text-primary">Scopri</h5>
                     <ul class="space-y-2">
-                        <li><a class="font-['Epilogue'] text-sm font-light text-slate-500 hover:text-[#1a4b9f] transition-colors" href="#">Location</a></li>
+                        <li><a class="font-['Epilogue'] text-sm font-light text-slate-500 hover:text-[#1a4b9f] transition-colors" href="index.html">Home</a></li>
                         <li><a class="font-['Epilogue'] text-sm font-light text-slate-500 hover:text-[#1a4b9f] transition-colors" href="esperienze_copia.html">Esperienze</a></li>
                         <li><a class="font-['Epilogue'] text-sm font-light text-slate-500 hover:text-[#1a4b9f] transition-colors" href="food_V1.html">Food</a></li>
                         <li><a class="font-['Epilogue'] text-sm font-light text-slate-500 hover:text-[#1a4b9f] transition-colors" href="servizi.html">Servizi</a></li>
@@ -951,5 +954,9 @@
     
 
     <script src="static/js/index.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
 </body>
 </html>

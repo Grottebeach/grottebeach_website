@@ -9,6 +9,9 @@
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 
+    <!-- AOS animazione -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
@@ -127,7 +130,7 @@
                     <a href="esperienze_copia.html">Esperienze</a>
                     <a class="nav-active" href="food_V1.html">Food</a>
                     <a href="eventi.html">Eventi</a>
-                    <a href="#">Merch</a>
+                    <!-- <a href="#">Merch</a> -->
                     <a href="contact.html">Contatti</a>
                 </div>
 
@@ -151,7 +154,7 @@
             <a class="mobile-menu-link" href="esperienze_copia.html">Esperienze</a>
             <a class="mobile-menu-link" href="food_V1.html">Food</a>
             <a class="mobile-menu-link" href="eventi.html">Eventi</a>
-            <a class="mobile-menu-link" href="#">Merch</a>
+            <!-- <a class="mobile-menu-link" href="#">Merch</a> -->
             <a class="mobile-menu-link" href="contact.html">Contatti</a>
         </nav>
         <a href="tel:+393891013881" class="mobile-prenota-btn mt-10 bg-[#1a4b9f] text-white px-10 py-4 rounded-full font-label-sm uppercase tracking-widest">
@@ -190,10 +193,10 @@
                     <!-- <span class="fade-up font-label-sm text-white uppercase tracking-[0.3em] mb-2 block" data-delay="200">
                         COLAZIONE &middot; PRANZO &middot; APERITIVO
                     </span> -->
-                    <h1 class="fade-up font-display-xl text-white text-5xl md:text-7xl mb-2" data-delay="100">
+                    <h1 class="font-display-xl text-white text-5xl md:text-7xl mb-2" data-aos="fade-up" data-aos-duration="500" data-aos-delay="0" data-aos-easing="ease-in-out" >
                         Food &amp; Drink
                     </h1>
-                    <span class="fade-up font-label-sm text-white uppercase tracking-[0.3em] mb-2 block" data-delay="200">
+                    <span class="font-label-sm text-white uppercase tracking-[0.3em] mb-2 block" data-aos="fade-up" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-in-out">
                         COLAZIONE &middot; PRANZO &middot; APERITIVO
                     </span>
                     <!-- <h1 class="fade-up font-display-xl text-white text-5xl md:text-7xl mb-6" data-delay="150">
@@ -202,7 +205,7 @@
                     <!-- <p class="fade-up font-body-lg text-white/90 max-w-2xl mx-auto" data-delay="300">
                         SALE SOLE SAPORE
                     </p> -->
-                    <p class="fade-up font-body-lg text-white/90 max-w-2xl mx-auto" data-delay="300">
+                    <p class="font-body-lg text-white/90 max-w-2xl mx-auto" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100" data-aos-easing="ease-in-out">
                         Dal primo sole sulla battigia ai riflessi ambrati del tramonto, scopri un viaggio culinario radicato nel sale, nel sole e nella terra della nostra costa.
                     </p>
                 </div>
@@ -232,7 +235,7 @@
                             <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="/static/img/food/gelato.jpg" alt="Colazione Siciliana" draggable="false" />
                         </div>
                         <div class="p-3.5">
-                            <span class="font-label-sm text-[9px] uppercase tracking-widest text-on-tertiary-container block mb-1">Mattino</span>
+                            <span class="font-label-sm text-[9px] uppercase tracking-widest text-on-tertiary-container block mb-1">Spuntino</span>
                             <p class="font-['Epilogue'] text-sm font-semibold text-primary leading-snug">Gelato</p>
                         </div>
                     </div>
@@ -343,7 +346,7 @@
                             <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="/static/img/food/Colazione.jpg" alt="Colazione Siciliana" draggable="false" />
                         </div>
                         <div class="p-3.5">
-                            <span class="font-label-sm text-[9px] uppercase tracking-widest text-on-tertiary-container block mb-1">Mattino</span>
+                            <span class="font-label-sm text-[9px] uppercase tracking-widest text-on-tertiary-container block mb-1">Spuntino</span>
                             <p class="font-['Epilogue'] text-sm font-semibold text-primary leading-snug">Granite</p>
                         </div>
                     </div>
@@ -354,7 +357,7 @@
                             <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="/static/img/food/gelato.jpg" alt="Colazione Siciliana" draggable="false" />
                         </div>
                         <div class="p-3.5">
-                            <span class="font-label-sm text-[9px] uppercase tracking-widest text-on-tertiary-container block mb-1">Mattino</span>
+                            <span class="font-label-sm text-[9px] uppercase tracking-widest text-on-tertiary-container block mb-1">Spuntino</span>
                             <p class="font-['Epilogue'] text-sm font-semibold text-primary leading-snug">Gelato</p>
                         </div>
                     </div>
@@ -469,28 +472,28 @@
 
                 <!-- Citazione -->
                 <div>
-                    <span class="font-label-sm text-on-tertiary-container uppercase tracking-[0.2em] mb-6 block">La nostra filosofia</span>
-                    <blockquote class="font-['Epilogue'] text-4xl md:text-5xl font-light italic text-primary leading-snug">
+                    <span class="font-label-sm text-on-tertiary-container uppercase tracking-[0.2em] mb-6 block" data-aos="fade-up" data-aos-duration="500" data-aos-delay="0" data-aos-easing="ease-in-out">La nostra filosofia</span>
+                    <blockquote class="font-['Epilogue'] text-4xl md:text-5xl font-light italic text-primary leading-snug" data-aos="fade-up" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-in-out">
                         "Il sole decide il menù, il mare la ricetta."
                     </blockquote>
                 </div>
 
                 <!-- Descrizione + ancora rapida al momento del giorno -->
                 <div>
-                    <p class="font-body-lg text-on-surface-variant mb-8">
+                    <p class="font-body-lg text-on-surface-variant mb-8" data-aos="fade-up" data-aos-duration="500" data-aos-delay="0" data-aos-easing="ease-in-out">
                         Ogni giorno la cucina di Grotte Beach segue il ritmo naturale della costa siciliana. Gli ingredienti arrivano dal territorio — pesce fresco dai pescatori locali, capperi delle Eolie, agrumi della costa tirrenica — e la nostra proposta cambia con le stagioni e il pescato.
                     </p>
                     <div class="flex flex-wrap gap-3">
-                        <a href="#colazione" class="px-5 py-2.5 rounded-full border border-primary/20 font-label-sm uppercase text-primary hover:bg-primary hover:text-white transition-all duration-300">
+                        <a href="#colazione" class="px-5 py-2.5 rounded-full border border-primary/20 font-label-sm uppercase text-primary hover:bg-primary hover:text-white transition-all duration-300" data-aos="fade-up" data-aos-duration="500" data-aos-delay="0" data-aos-easing="ease-in-out">
                             08:00 — Colazione
                         </a>
-                        <a href="#pranzo" class="px-5 py-2.5 rounded-full border border-primary/20 font-label-sm uppercase text-primary hover:bg-primary hover:text-white transition-all duration-300">
+                        <a href="#pranzo" class="px-5 py-2.5 rounded-full border border-primary/20 font-label-sm uppercase text-primary hover:bg-primary hover:text-white transition-all duration-300" data-aos="fade-up" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-in-out">
                             12:30 — Pranzo
                         </a>
-                        <a href="#aperitivo" class="px-5 py-2.5 rounded-full border border-primary/20 font-label-sm uppercase text-primary hover:bg-primary hover:text-white transition-all duration-300">
+                        <a href="#aperitivo" class="px-5 py-2.5 rounded-full border border-primary/20 font-label-sm uppercase text-primary hover:bg-primary hover:text-white transition-all duration-300" data-aos="fade-up" data-aos-duration="500" data-aos-delay="75" data-aos-easing="ease-in-out">
                             17:30 — Aperitivo
                         </a>
-                        <a href="#cena" class="px-5 py-2.5 rounded-full border border-primary/20 font-label-sm uppercase text-primary hover:bg-primary hover:text-white transition-all duration-300">
+                        <a href="#cena" class="px-5 py-2.5 rounded-full border border-primary/20 font-label-sm uppercase text-primary hover:bg-primary hover:text-white transition-all duration-300" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100" data-aos-easing="ease-in-out">
                             19:00 — Cena
                         </a>
                     </div>
@@ -500,7 +503,7 @@
         </section>
 
         <!-- ===================== 01 — COLAZIONE ===================== -->
-        <section id="colazione" class="fade-up overflow-hidden">
+        <section id="colazione" class="overflow-hidden">
             <div class="flex flex-col lg:flex-row">
 
                 <!-- Immagine SX -->
@@ -519,39 +522,39 @@
                 <div class="lg:w-1/2 bg-[#F2EEE9] px-12 xl:px-20 py-xl">
                     <div>
 
-                        <div class="relative mb-4">
-                            <span class="absolute -top-8 -left-3 font-['Epilogue'] text-[130px] font-bold text-primary/[0.04] leading-none select-none pointer-events-none">01</span>
+                        <div class="relative mb-4" data-aos="fade-up" data-aos-duration="500" data-aos-delay="0" data-aos-easing="ease-in-out">
+                            <span class="absolute -top-8 -left-3 font-['Epilogue'] text-[130px] font-bold text-primary/[0.04] leading-none select-none pointer-events-none">Colazione</span>
                             <span class="font-label-sm text-on-tertiary-container uppercase tracking-[0.2em] mb-3 block">Buongiorno</span>
                             <h2 class="font-headline-lg text-headline-lg text-primary">Colazione</h2>
                         </div>
 
-                        <p class="font-body-lg text-on-surface-variant mb-4">
+                        <p class="font-body-lg text-on-surface-variant mb-4" data-aos="fade-up" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-in-out">
                             Il giorno inizia con l'aroma del caffè siciliano e il rumore delle onde. Granite rinfrescanti, cornetti appena sfornati, frutta di stagione e succhi freschi serviti direttamente sulla terrazza affacciata sul mare.
                         </p>
 
-                        <div class="mb-4">
+                        <div class="mb-4" data-aos="fade-up" data-aos-duration="500" data-aos-delay="0" data-aos-easing="ease-in-out">
                             <h3 class="font-label-sm uppercase tracking-widest text-primary/50 mb-3">Alcune proposte</h3>
                             <div class="space-y-0">
-                                <div class="flex justify-between items-baseline py-2 border-b border-primary/10">
+                                <div class="flex justify-between items-baseline py-2 border-b border-primary/10" data-aos="fade-up" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-in-out">
                                     <span class="font-['Epilogue'] text-primary font-light">Granita Limone</span>
                                     <span class="font-label-sm text-on-surface-variant ml-6 flex-shrink-0">€ 2,30</span>
                                 </div>
-                                <div class="flex justify-between items-baseline py-2 border-b border-primary/10">
+                                <div class="flex justify-between items-baseline py-2 border-b border-primary/10" data-aos="fade-up" data-aos-duration="500" data-aos-delay="75" data-aos-easing="ease-in-out">
                                     <span class="font-['Epilogue'] text-primary font-light">Brioche</span>
                                     <span class="font-label-sm text-on-surface-variant ml-6 flex-shrink-0">€ 1,30</span>
                                 </div>
-                                <div class="flex justify-between items-baseline py-2 border-b border-primary/10">
+                                <div class="flex justify-between items-baseline py-2 border-b border-primary/10" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100" data-aos-easing="ease-in-out">
                                     <span class="font-['Epilogue'] text-primary font-light">Toast con burro, miele e marmellata</span>
                                     <span class="font-label-sm text-on-surface-variant ml-6 flex-shrink-0">€ 3,00</span>
                                 </div>
-                                <div class="flex justify-between items-baseline py-2 border-b border-primary/10">
+                                <div class="flex justify-between items-baseline py-2 border-b border-primary/10" data-aos="fade-up" data-aos-duration="500" data-aos-delay="125" data-aos-easing="ease-in-out">
                                     <span class="font-['Epilogue'] text-primary font-light">Cappuccino</span>
                                     <span class="font-label-sm text-on-surface-variant ml-6 flex-shrink-0">€ 2,50</span>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="bg-white rounded-2xl p-6 border border-outline-variant/30 shadow-sm flex items-center justify-between gap-4 flex-wrap">
+                        <div class="bg-white rounded-2xl p-6 border border-outline-variant/30 shadow-sm flex items-center justify-between gap-4 flex-wrap" data-aos="fade-up" data-aos-duration="500" data-aos-delay="150" data-aos-easing="ease-in-out">
                             <div class="flex items-center gap-4">
                                 <div class="w-12 h-12 rounded-xl bg-[#F2EEE9] flex items-center justify-center flex-shrink-0">
                                     <span class="material-symbols-outlined text-2xl text-primary">menu_book</span>
@@ -595,39 +598,39 @@
                 <div class="lg:w-1/2 bg-surface-container-lowest px-12 xl:px-20 py-xl">
                     <div>
 
-                        <div class="relative mb-4">
-                            <span class="absolute -top-8 -left-3 font-['Epilogue'] text-[130px] font-bold text-primary/[0.04] leading-none select-none pointer-events-none">02</span>
+                        <div class="relative mb-4" data-aos="fade-up" data-aos-duration="500" data-aos-delay="0" data-aos-easing="ease-in-out">
+                            <span class="absolute -top-8 -left-3 font-['Epilogue'] text-[130px] font-bold text-primary/[0.04] leading-none select-none pointer-events-none">Pranzo</span>
                             <span class="font-label-sm text-on-tertiary-container uppercase tracking-[0.2em] mb-3 block">Buon Appetito</span>
                             <h2 class="font-headline-lg text-headline-lg text-primary">Pranzo</h2>
                         </div>
 
-                        <p class="font-body-lg text-on-surface-variant mb-4">
+                        <p class="font-body-lg text-on-surface-variant mb-4" data-aos="fade-up" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-in-out">
                             Quando il sole è alto e il mare invita alla pausa. Primi di mare e di terra preparati con ciò che arriva al mattino dal porto, insalatone fresche, panini piastrati e piatti del giorno sempre diversi.
                         </p>
 
-                        <div class="mb-4">
+                        <div class="mb-4" data-aos="fade-up" data-aos-duration="500" data-aos-delay="0" data-aos-easing="ease-in-out">
                             <h3 class="font-label-sm uppercase tracking-widest text-primary/50 mb-3">Alcune proposte</h3>
                             <div class="space-y-0">
-                                <div class="flex justify-between items-baseline py-2 border-b border-primary/10">
+                                <div class="flex justify-between items-baseline py-2 border-b border-primary/10" data-aos="fade-up" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-in-out">
                                     <span class="font-['Epilogue'] text-primary font-light">Pasta al pomodoro</span>
                                     <span class="font-label-sm text-on-surface-variant ml-6 flex-shrink-0">€ 6,00</span>
                                 </div>
-                                <div class="flex justify-between items-baseline py-2 border-b border-primary/10">
+                                <div class="flex justify-between items-baseline py-2 border-b border-primary/10" data-aos="fade-up" data-aos-duration="500" data-aos-delay="75" data-aos-easing="ease-in-out">
                                     <span class="font-['Epilogue'] text-primary font-light">Pasta Alla Norma</span>
                                     <span class="font-label-sm text-on-surface-variant ml-6 flex-shrink-0">€ 7,50</span>
                                 </div>
-                                <div class="flex justify-between items-baseline py-2 border-b border-primary/10">
+                                <div class="flex justify-between items-baseline py-2 border-b border-primary/10" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100" data-aos-easing="ease-in-out">
                                     <span class="font-['Epilogue'] text-primary font-light">Pasta Alle Vongole</span>
                                     <span class="font-label-sm text-on-surface-variant ml-6 flex-shrink-0">€ 9,50</span>
                                 </div>
-                                <div class="flex justify-between items-baseline py-2 border-b border-primary/10">
+                                <div class="flex justify-between items-baseline py-2 border-b border-primary/10" data-aos="fade-up" data-aos-duration="500" data-aos-delay="125" data-aos-easing="ease-in-out">
                                     <span class="font-['Epilogue'] text-primary font-light">Primo Dello Chef</span>
                                     <span class="font-label-sm text-on-surface-variant ml-6 flex-shrink-0">da € 10,50</span>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="bg-white rounded-2xl p-6 border border-outline-variant/30 shadow-sm flex items-center justify-between gap-4 flex-wrap">
+                        <div class="bg-white rounded-2xl p-6 border border-outline-variant/30 shadow-sm flex items-center justify-between gap-4 flex-wrap" data-aos="fade-up" data-aos-duration="500" data-aos-delay="150" data-aos-easing="ease-in-out">
                             <div class="flex items-center gap-4">
                                 <div class="w-12 h-12 rounded-xl bg-[#F2EEE9] flex items-center justify-center flex-shrink-0">
                                     <span class="material-symbols-outlined text-2xl text-primary">menu_book</span>
@@ -671,39 +674,39 @@
                 <div class="lg:w-1/2 bg-[#F2EEE9] px-12 xl:px-20 py-xl">
                     <div>
 
-                        <div class="relative mb-4">
-                            <span class="absolute -top-8 -left-3 font-['Epilogue'] text-[130px] font-bold text-primary/[0.04] leading-none select-none pointer-events-none">03</span>
+                        <div class="relative mb-4" data-aos="fade-up" data-aos-duration="500" data-aos-delay="0" data-aos-easing="ease-in-out">
+                            <span class="absolute -top-8 -left-3 font-['Epilogue'] text-[130px] font-bold text-primary/[0.04] leading-none select-none pointer-events-none">Aperitivo</span>
                             <span class="font-label-sm text-on-tertiary-container uppercase tracking-[0.2em] mb-3 block">Il tramonto</span>
                             <h2 class="font-headline-lg text-headline-lg text-primary">Aperitivo</h2>
                         </div>
 
-                        <p class="font-body-lg text-on-surface-variant mb-4">
+                        <p class="font-body-lg text-on-surface-variant mb-4" data-aos="fade-up" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-in-out">
                             Mentre il sole scende lento sulle Isole Eolie, il bar di Grotte si anima. Cocktail artigianali, vini locali, birre selezionate e un ricco tagliere siciliano per accompagnare l'ora più bella della giornata.
                         </p>
 
                         <div class="mb-4">
-                            <h3 class="font-label-sm uppercase tracking-widest text-primary/50 mb-3">Alcune proposte</h3>
+                            <h3 class="font-label-sm uppercase tracking-widest text-primary/50 mb-3" data-aos="fade-up" data-aos-duration="500" data-aos-delay="0" data-aos-easing="ease-in-out">Alcune proposte</h3>
                             <div class="space-y-0">
-                                <div class="flex justify-between items-baseline py-2 border-b border-primary/10">
+                                <div class="flex justify-between items-baseline py-2 border-b border-primary/10" data-aos="fade-up" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-in-out">
                                     <span class="font-['Epilogue'] text-primary font-light">Grotte Beach</span>
                                     <span class="font-label-sm text-on-surface-variant ml-6 flex-shrink-0">€ 4,50</span>
                                 </div>
-                                <div class="flex justify-between items-baseline py-2 border-b border-primary/10">
+                                <div class="flex justify-between items-baseline py-2 border-b border-primary/10" data-aos="fade-up" data-aos-duration="500" data-aos-delay="75" data-aos-easing="ease-in-out">
                                     <span class="font-['Epilogue'] text-primary font-light">Campari Beach</span>
                                     <span class="font-label-sm text-on-surface-variant ml-6 flex-shrink-0">€ 4,50</span>
                                 </div>
-                                <div class="flex justify-between items-baseline py-2 border-b border-primary/10">
+                                <div class="flex justify-between items-baseline py-2 border-b border-primary/10" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100" data-aos-easing="ease-in-out">
                                     <span class="font-['Epilogue'] text-primary font-light">Aperol Spritz</span>
                                     <span class="font-label-sm text-on-surface-variant ml-6 flex-shrink-0">€ 4,50</span>
                                 </div>
-                                <div class="flex justify-between items-baseline py-2 border-b border-primary/10">
+                                <div class="flex justify-between items-baseline py-2 border-b border-primary/10" data-aos="fade-up" data-aos-duration="500" data-aos-delay="125" data-aos-easing="ease-in-out">
                                     <span class="font-['Epilogue'] text-primary font-light">Vodka Sicily</span>
                                     <span class="font-label-sm text-on-surface-variant ml-6 flex-shrink-0">€ 6,00</span>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="bg-white rounded-2xl p-6 border border-outline-variant/30 shadow-sm flex items-center justify-between gap-4 flex-wrap">
+                        <div class="bg-white rounded-2xl p-6 border border-outline-variant/30 shadow-sm flex items-center justify-between gap-4 flex-wrap" data-aos="fade-up" data-aos-duration="500" data-aos-delay="150" data-aos-easing="ease-in-out">
                             <div class="flex items-center gap-4">
                                 <div class="w-12 h-12 rounded-xl bg-[#F2EEE9] flex items-center justify-center flex-shrink-0">
                                     <span class="material-symbols-outlined text-2xl text-primary">menu_book</span>
@@ -734,20 +737,20 @@
 
                     <!-- Testo -->
                     <div class="max-w-xl">
-                        <div class="relative mb-6">
-                            <span class="absolute -top-8 -left-3 font-['Epilogue'] text-[130px] font-bold text-white/[0.04] leading-none select-none pointer-events-none">04</span>
+                        <div class="relative mb-6" data-aos="fade-up" data-aos-duration="500" data-aos-delay="0" data-aos-easing="ease-in-out">
+                            <span class="absolute -top-8 -left-3 font-['Epilogue'] text-[130px] font-bold text-white/[0.04] leading-none select-none pointer-events-none">Cena</span>
                             <span class="font-label-sm text-white/40 uppercase tracking-[0.2em] mb-3 block">Un momento unico</span>
                             <h2 class="font-headline-lg text-headline-lg text-white">Cena</h2>
                         </div>
 
-                        <p class="font-body-lg text-white/75 mb-4">
+                        <p class="font-body-lg text-white/75 mb-4" data-aos="fade-up" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-in-out">
                             Le cene a Grotte Beach sono un'esperienza intima e curata. Il menù viene proposto direttamente dal nostro Chef in base al pescato del giorno e agli ingredienti di stagione.
                         </p>
-                        <p class="font-body-md text-white/50 mb-6">
+                        <p class="font-body-md text-white/50 mb-6" data-aos="fade-up" data-aos-duration="500" data-aos-delay="75" data-aos-easing="ease-in-out">
                             Non esiste un menù fisso: ogni sera è una storia diversa. Contattaci per organizzare la tua serata.
                         </p>
 
-                        <div class="flex flex-wrap gap-4">
+                        <div class="flex flex-wrap gap-4" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100" data-aos-easing="ease-in-out">
                             <a href="tel:+393891013881" class="bg-white text-primary px-10 py-4 rounded-full font-label-sm uppercase tracking-widest hover:bg-[#F2EEE9] transition-all">
                                 Prenota Una Cena
                             </a>
@@ -758,7 +761,7 @@
                     </div>
 
                     <!-- Immagine inquadrata -->
-                    <div class="relative w-full lg:w-[460px] flex-shrink-0">
+                    <div class="relative w-full lg:w-[460px] flex-shrink-0"  data-aos="fade-up" data-aos-duration="500" data-aos-delay="0" data-aos-easing="ease-in-out">
                         <div class="rounded-2xl overflow-hidden h-[380px] shadow-2xl">
                             <img
                                 class="w-full h-full object-cover"
@@ -785,9 +788,9 @@
             <div class="max-w-7xl mx-auto px-gutter">
 
                 <div class="text-center mb-16">
-                    <span class="font-label-sm text-on-tertiary-container uppercase tracking-[0.2em] mb-4 block">Il nostro territorio</span>
-                    <h2 class="font-headline-lg text-headline-lg text-primary mb-4">I 5 Piatti Più Venduti</h2>
-                    <p class="font-body-lg text-on-surface-variant max-w-2xl mx-auto">
+                    <span class="font-label-sm text-on-tertiary-container uppercase tracking-[0.2em] mb-4 block" data-aos="fade-up" data-aos-duration="500" data-aos-delay="0" data-aos-easing="ease-in-out">Il nostro territorio</span>
+                    <h2 class="font-headline-lg text-headline-lg text-primary mb-4" data-aos="fade-up" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-in-out">I 5 Piatti Più Venduti</h2>
+                    <p class="font-body-lg text-on-surface-variant max-w-2xl mx-auto" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100" data-aos-easing="ease-in-out">
                         Ogni piatto nasce da una radice precisa. Questi sono i cinque piatti più amati dai nostri clienti.
                     </p>
                     <div class="w-20 h-px bg-black/20 mx-auto mt-8"></div>
@@ -797,7 +800,7 @@
 
                     <!-- 1. Pasta Alla Norma -->
                     <!-- Immagine: /static/img/food/ingr_tonno.jpg -->
-                    <div class="group flex flex-col items-center text-center">
+                    <div class="group flex flex-col items-center text-center" data-aos="fade-up" data-aos-duration="500" data-aos-delay="0" data-aos-easing="ease-in-out">
                         <div class="w-36 h-36 pebble-mask overflow-hidden mb-5 transition-transform duration-500 group-hover:scale-105 shadow-lg bg-surface-container-lowest">
                             <img class="w-full h-full object-cover" src="/static/img/food/norma.jpg" alt="Pasta Alla Norma" />
                         </div>
@@ -808,7 +811,7 @@
 
                     <!-- 2. Pasta Alle Vongole -->
                     <!-- Immagine: /static/img/food/ingr_capperi.jpg -->
-                    <div class="group flex flex-col items-center text-center">
+                    <div class="group flex flex-col items-center text-center" data-aos="fade-up" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-in-out">
                         <div class="w-36 h-36 pebble-mask overflow-hidden mb-5 transition-transform duration-500 group-hover:scale-105 shadow-lg bg-surface-container-lowest">
                             <img class="w-full h-full object-cover" src="/static/img/food/vongole.JPG" alt="Pasta Alle Vongole" />
                         </div>
@@ -819,7 +822,7 @@
 
                     <!-- 3. Cotoletta M'panata -->
                     <!-- Immagine: /static/img/food/ingr_pesce_spada.jpg -->
-                    <div class="group flex flex-col items-center text-center">
+                    <div class="group flex flex-col items-center text-center" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100" data-aos-easing="ease-in-out">
                         <div class="w-36 h-36 pebble-mask overflow-hidden mb-5 transition-transform duration-500 group-hover:scale-105 shadow-lg bg-surface-container-lowest">
                             <img class="w-full h-full object-cover" src="/static/img/food/cotoletta.JPEG" alt="Cotoletta M'panata" />
                         </div>
@@ -830,7 +833,7 @@
 
                     <!-- 4. Involtini di Pesce Spada -->
                     <!-- Immagine: /static/img/food/ingr_pistacchio.jpg -->
-                    <div class="group flex flex-col items-center text-center">
+                    <div class="group flex flex-col items-center text-center" data-aos="fade-up" data-aos-duration="500" data-aos-delay="150" data-aos-easing="ease-in-out">
                         <div class="w-36 h-36 pebble-mask overflow-hidden mb-5 transition-transform duration-500 group-hover:scale-105 shadow-lg bg-surface-container-lowest">
                             <img class="w-full h-full object-cover" src="/static/img/food/involtinispada.png" alt="Involtini di Pesce Spada" />
                         </div>
@@ -841,7 +844,7 @@
 
                     <!-- 5. Caprese-->
                     <!-- Immagine: /static/img/food/ingr_agrumi.jpg -->
-                    <div class="group flex flex-col items-center text-center">
+                    <div class="group flex flex-col items-center text-center" data-aos="fade-up" data-aos-duration="500" data-aos-delay="200" data-aos-easing="ease-in-out">
                         <div class="w-36 h-36 pebble-mask overflow-hidden mb-5 transition-transform duration-500 group-hover:scale-105 shadow-lg bg-surface-container-lowest">
                             <img class="w-full h-full object-cover" src="/static/img/food/caprese.jpg" alt="Caprese" />
                         </div>
@@ -886,7 +889,7 @@
                 <div class="space-y-4">
                     <h5 class="font-label-sm uppercase tracking-widest text-primary">Scopri</h5>
                     <ul class="space-y-2">
-                        <li><a class="font-['Epilogue'] text-sm font-light text-slate-500 hover:text-[#1a4b9f] transition-colors" href="#">Location</a></li>
+                        <li><a class="font-['Epilogue'] text-sm font-light text-slate-500 hover:text-[#1a4b9f] transition-colors" href="index.html">Home</a></li>
                         <li><a class="font-['Epilogue'] text-sm font-light text-slate-500 hover:text-[#1a4b9f] transition-colors" href="/esperienze_copia.html">Esperienze</a></li>
                         <li><a class="font-['Epilogue'] text-sm font-light text-slate-500 hover:text-[#1a4b9f] transition-colors" href="/food_V1.html">Food</a></li>
                         <li><a class="font-['Epilogue'] text-sm font-light text-slate-500 hover:text-[#1a4b9f] transition-colors" href="servizi.html">Servizi</a></li>
@@ -1026,6 +1029,11 @@
 
     <!-- food.js: navbar + mobile menu + fade-up + carosello + modal lingua -->
     <script src="/static/js/food.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
+
 
 
 </body>
