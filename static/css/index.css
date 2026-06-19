@@ -294,6 +294,12 @@ header .nav-btn {
     }
 }
 
+/* ── Nascondi scrollbar orizzontale su tutti i browser (incluso Safari/WebKit) ── */
+#staff-scroll-container::-webkit-scrollbar,
+#gallery-clienti-scroll::-webkit-scrollbar {
+    display: none;
+}
+
 /* ── Galleria clienti scroll hint ── */
 .gallery-clienti-hint {
     position: absolute;

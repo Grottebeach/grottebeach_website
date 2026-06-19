@@ -330,11 +330,13 @@ function makeScrollHint(hintId, scrollerId) {
     var scroller = document.getElementById(scrollerId);
     if (!hint || !scroller) return;
 
-    var dismissed  = false;
-    var nudgeDone  = false;
+    var isActive   = false;   // hint visibile e nudge in corso
+    var dismissed  = false;   // utente ha scrollato: non ri-mostrare finché non esce e rientra
+    var isNudging  = false;   // nudge automatico in corso (ignora scroll events)
     var nudgeAnim  = null;
     var showTimer  = null;
     var nudgeTimer = null;
+    var leaveTimer = null;
 
     // Easing smooth scroll via rAF (easeInOutQuad)
     function smoothTo(el, target, duration, cb) {
@@ -342,6 +344,7 @@ function makeScrollHint(hintId, scrollerId) {
         var dist  = target - start;
         var t0    = null;
         if (nudgeAnim) cancelAnimationFrame(nudgeAnim);
+        if (Math.abs(dist) < 1) { if (cb) cb(); return; }
         function ease(t) { return t < 0.5 ? 2*t*t : -1+(4-2*t)*t; }
         function step(ts) {
             if (!t0) t0 = ts;
@@ -365,60 +368,81 @@ function makeScrollHint(hintId, scrollerId) {
     function dismiss() {
         if (dismissed) return;
         dismissed = true;
+        isActive  = false;
         if (nudgeAnim) cancelAnimationFrame(nudgeAnim);
+        clearTimeout(nudgeTimer);
+        isNudging = false;
         hide();
         scroller.removeEventListener('scroll', onUserScroll);
-        scroller.removeEventListener('touchstart', onTouch);
     }
 
-    function onUserScroll() { if (nudgeDone) dismiss(); }
-    function onTouch() { dismiss(); }
+    // Scatta solo se è lo scroll dell'utente (non del nudge) e se ha scrollato davvero
+    function onUserScroll() {
+        if (!isActive || isNudging) return;
+        if (scroller.scrollLeft > 20) dismiss();
+    }
 
-    function reset() {
-        dismissed = false;
-        nudgeDone = false;
+    function cleanup() {
         if (nudgeAnim) cancelAnimationFrame(nudgeAnim);
         clearTimeout(showTimer);
         clearTimeout(nudgeTimer);
+        clearTimeout(leaveTimer);
+        isNudging = false;
+        scroller.removeEventListener('scroll', onUserScroll);
+    }
+
+    function reset() {
+        cleanup();
+        dismissed = false;
+        isActive  = false;
         hide();
         scroller.scrollLeft = 0;
-        scroller.removeEventListener('scroll', onUserScroll);
-        scroller.removeEventListener('touchstart', onTouch);
     }
 
     function activate() {
-        showTimer = setTimeout(function () {
-            if (dismissed) return;
-            show();
-        }, 700);
-        // nudge: avanza 320px in 600ms, pausa 500ms, torna in 600ms
+        if (isActive || dismissed) return;
+        isActive = true;
+
+        // Mostra hint subito (senza ritardo: più affidabile su mobile)
+        show();
+
+        // Nudge: avanza 280px in 600ms, pausa 500ms, torna in 500ms
         nudgeTimer = setTimeout(function () {
-            if (dismissed) return;
-            smoothTo(scroller, 320, 600, function () {
-                if (dismissed) return;
+            if (!isActive) return;
+            isNudging = true;
+            smoothTo(scroller, 280, 600, function () {
+                if (!isActive) { isNudging = false; return; }
                 setTimeout(function () {
-                    if (dismissed) return;
-                    smoothTo(scroller, 0, 600, function () {
-                        nudgeDone = true;
+                    if (!isActive) { isNudging = false; return; }
+                    smoothTo(scroller, 0, 500, function () {
+                        isNudging = false;
                     });
                 }, 500);
             });
-        }, 700);
+        }, 400);
+
         scroller.addEventListener('scroll', onUserScroll, { passive: true });
-        scroller.addEventListener('touchstart', onTouch, { passive: true });
     }
 
-    // threshold 0.5: almeno metà sezione visibile
-    // Nessun disconnect: si resetta uscendo e si riattiva rientrando
+    // threshold 0.15: si attiva non appena il 15% della sezione è visibile
+    // (molto più affidabile su iPhone/Safari che non raggiungono facilmente 0.5)
+    // Il reset avviene con un piccolo debounce per evitare reset su rimbalzi
     var observer = new IntersectionObserver(function (entries) {
         entries.forEach(function (entry) {
+            clearTimeout(leaveTimer);
             if (entry.isIntersecting) {
-                activate();
+                // Piccolo debounce: ignora passaggi rapidissimi
+                leaveTimer = setTimeout(function () {
+                    activate();
+                }, 100);
             } else {
-                reset();
+                // Reset con ritardo: evita reset su bounce/momentum di iOS
+                leaveTimer = setTimeout(function () {
+                    reset();
+                }, 600);
             }
         });
-    }, { threshold: 0.5 });
+    }, { threshold: 0.15 });
 
     observer.observe(scroller.parentElement);
 }
