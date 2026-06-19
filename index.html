@@ -438,24 +438,21 @@
         <!-- ===================== STAFF ===================== -->
         <section class="relative mt-10 mb-10 overflow-hidden">
 
-            <!-- Overlay scuro per leggibilità -->
-            <div class="absolute inset-0 z-[5] bg-black/35 pointer-events-none"></div>
-
-            <!-- Testo in primo piano, centrato -->
-            <div class="absolute inset-0 z-10 flex items-center justify-center pointer-events-none">
-                <div class="text-center px-6">
-                    <span class="text-base text-white/70 uppercase tracking-[0.4em] mb-4 block font-semibold" data-aos="fade-up" data-aos-duration="500" data-aos-delay="0" data-aos-easing="ease-in-out">Il nostro team</span>
-                    <h2 class="text-base text-white/70 drop-shadow-xl uppercase tracking-[0.4em] font-semibold" data-aos="fade-up" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-in-out">Pronti ad accoglierti</h2>
-                    <!-- Indicatore scroll — visibile solo su mobile/tablet -->
-                    <div class="mt-4 flex items-center justify-center gap-1.5 pointer-events-none" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100" data-aos-easing="ease-in-out">
-                        <span class="text-base text-white/70 uppercase tracking-[0.4em] font-semibold underline underline-offset-4 decoration-white/50">Scorri</span>
-                        <span class="material-symbols-outlined text-white/70 staff-scroll-arrow" style="font-size:18px;">chevron_right</span>
-                    </div>
+            <!-- Hint scroll (stesso stile galleria clienti) -->
+            <div id="staff-hint" class="gallery-clienti-hint" aria-hidden="true">
+                <div class="text-center" style="line-height:1.5;">
+                    <span class="font-label-sm text-white/70 uppercase tracking-[0.4em] text-xs block">Il nostro team</span>
+                    <span class="font-label-sm text-white uppercase tracking-[0.35em] text-sm">Pronti ad accoglierti</span>
+                </div>
+                <div class="flex items-center gap-1">
+                    <span class="gallery-clienti-arrow material-symbols-outlined text-white" style="font-size:20px;">chevron_right</span>
+                    <span class="gallery-clienti-arrow gallery-clienti-arrow--2 material-symbols-outlined text-white" style="font-size:20px;">chevron_right</span>
+                    <span class="gallery-clienti-arrow gallery-clienti-arrow--3 material-symbols-outlined text-white" style="font-size:20px;">chevron_right</span>
                 </div>
             </div>
 
             <!-- Striscia 8 foto portrait senza gap — scroll orizzontale su tutti i dispositivi -->
-            <div class="flex overflow-x-auto" style="scrollbar-width: none; -ms-overflow-style: none;">
+            <div id="staff-scroll-container" class="flex overflow-x-auto" style="scrollbar-width: none; -ms-overflow-style: none;">
                 <div class="flex-shrink-0 h-[600px]" style="aspect-ratio: 9/15;">
                     <img src="/static/img/Staff/staffgruppo.jpg" alt="Staff Grotte Beach" class="w-full h-full object-cover block" />
                 </div>
@@ -585,7 +582,17 @@
         <!-- ===================== fine IL LOCALE ===================== -->
 
         <!-- ===================== GALLERY STEP (dual vertical) ===================== -->
-        <section class="gallery-dual mt-24" aria-label="Galleria fotografica Grotte Beach">
+        <section class="gallery-dual-wrapper mt-24 relative" aria-label="Galleria fotografica Grotte Beach">
+
+            <!-- Frecce di navigazione -->
+            <button id="gallery-dual-prev" class="gallery-dual-nav gallery-dual-nav--prev" aria-label="Immagine precedente">
+                <span class="material-symbols-outlined">arrow_back</span>
+            </button>
+            <button id="gallery-dual-next" class="gallery-dual-nav gallery-dual-nav--next" aria-label="Immagine successiva">
+                <span class="material-symbols-outlined">arrow_forward</span>
+            </button>
+
+        <section class="gallery-dual" aria-label="Galleria fotografica Grotte Beach">
 
             <!-- Colonna sinistra — scorre verso l'alto -->
             <div class="gallery-dual__col">
@@ -619,6 +626,7 @@
             </div>
 
         </section>
+        </section><!-- /gallery-dual-wrapper -->
         <!-- ===================== fine GALLERY STEP ===================== -->
 
         <!-- ===================== RISERVA NATURALE ===================== -->
@@ -683,24 +691,18 @@
         <!-- ===================== Galleria clienti ===================== -->
         <section class="relative mt-10 mb-10 overflow-hidden">
 
-            <!-- Overlay scuro per leggibilità -->
-            <div class="absolute inset-0 z-[5] pointer-events-none"></div>
-
-            <!-- Testo in primo piano, centrato -->
-            <!-- <div class="absolute inset-0 z-10 flex items-center justify-center pointer-events-none">
-                <div class="text-center px-6">
-                    <span class="text-base text-white/70 uppercase tracking-[0.4em] mb-4 block font-semibold" data-aos="fade-up" data-aos-duration="500" data-aos-delay="0" data-aos-easing="ease-in-out">I VOSTRI SORRISI</span>
-                    <h2 class="text-base text-white/70 drop-shadow-xl uppercase tracking-[0.4em] font-semibold" data-aos="fade-up" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-in-out">LA NOSTRA MISSIONE</h2>
-                    
-                    <div class="mt-4 flex items-center justify-center gap-1.5 pointer-events-none" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100" data-aos-easing="ease-in-out">
-                        <span class="text-base text-white/70 uppercase tracking-[0.4em] font-semibold underline underline-offset-4 decoration-white/50">Scorri</span>
-                        <span class="material-symbols-outlined text-white/70 staff-scroll-arrow" style="font-size:18px;">chevron_right</span>
-                    </div>
+            <!-- Hint scroll: compare all'entrata nella viewport, scompare al primo scroll -->
+            <div id="gallery-clienti-hint" class="gallery-clienti-hint" aria-hidden="true">
+                <span class="font-label-sm text-white uppercase tracking-[0.35em] text-sm">Scorri per scoprire i momenti</span>
+                <div class="flex items-center gap-1">
+                    <span class="gallery-clienti-arrow material-symbols-outlined text-white" style="font-size:20px;">chevron_right</span>
+                    <span class="gallery-clienti-arrow gallery-clienti-arrow--2 material-symbols-outlined text-white" style="font-size:20px;">chevron_right</span>
+                    <span class="gallery-clienti-arrow gallery-clienti-arrow--3 material-symbols-outlined text-white" style="font-size:20px;">chevron_right</span>
                 </div>
-            </div> -->
+            </div>
 
-            <!-- Striscia 8 foto portrait senza gap — scroll orizzontale su tutti i dispositivi -->
-            <div class="flex overflow-x-auto" style="scrollbar-width: none; -ms-overflow-style: none;">
+            <!-- Striscia foto portrait senza gap — scroll orizzontale su tutti i dispositivi -->
+            <div id="gallery-clienti-scroll" class="flex overflow-x-auto" style="scrollbar-width: none; -ms-overflow-style: none;">
                 <div class="flex-shrink-0 h-[600px]" style="aspect-ratio: 9/15;">
                     <img src="/static/img/galleriaclienti/fotogalleria1 Piccola.png" alt="Clienti Grotte Beach" class="w-full h-full object-cover block" />
                 </div>

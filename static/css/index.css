@@ -294,6 +294,84 @@ header .nav-btn {
     }
 }
 
+/* ── Galleria clienti scroll hint ── */
+.gallery-clienti-hint {
+    position: absolute;
+    bottom: 28px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 20;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    padding: 10px 24px 12px;
+    background: rgba(0, 0, 0, 0.45);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 9999px;
+    white-space: nowrap;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+.gallery-clienti-hint.visible {
+    opacity: 1;
+}
+.gallery-clienti-hint.hidden-hint {
+    opacity: 0;
+    pointer-events: none;
+}
+@keyframes hint-chevron {
+    0%   { opacity: 0.25; transform: translateX(-4px); }
+    50%  { opacity: 1;    transform: translateX(3px); }
+    100% { opacity: 0.25; transform: translateX(-4px); }
+}
+.gallery-clienti-arrow {
+    animation: hint-chevron 1.4s ease-in-out infinite;
+}
+.gallery-clienti-arrow--2 {
+    animation-delay: 0.18s;
+}
+.gallery-clienti-arrow--3 {
+    animation-delay: 0.36s;
+}
+
+/* ── Gallery step nav buttons ── */
+.gallery-dual-wrapper {
+    position: relative;
+}
+.gallery-dual-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 20;
+    width: 48px;
+    height: 48px;
+    border-radius: 9999px;
+    background: rgba(255, 255, 255, 0.85);
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+    transition: background 0.25s ease, transform 0.25s ease, opacity 0.25s ease;
+    opacity: 0.75;
+}
+.gallery-dual-nav:hover {
+    background: #fff;
+    opacity: 1;
+    transform: translateY(-50%) scale(1.08);
+}
+.gallery-dual-nav .material-symbols-outlined {
+    color: #1a4b9f;
+    font-size: 22px;
+}
+.gallery-dual-nav--prev { left: 16px; }
+.gallery-dual-nav--next { right: 16px; }
+
 /* ── Locale diagonal split ── */
 
 /*
