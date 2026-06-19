@@ -173,14 +173,21 @@
         <!-- ===== HERO ===== -->
         <section class="relative h-screen w-full flex items-center justify-center overflow-hidden">
             <div class="absolute inset-0 z-0">
-                <!-- Immagine desktop -->
+                <!-- Desktop: 3 pannelli affiancati -->
+                <div class="hidden md:flex absolute inset-0">
+                    <div class="flex-1 overflow-hidden">
+                        <img class="w-full h-full object-cover" src="/static/img/Servizi/spiaggiaheroservizi.png" alt="Spiaggia Grotte Beach" />
+                    </div>
+                    <div class="flex-1 overflow-hidden">
+                        <img class="w-full h-full object-cover" src="/static/img/Servizi/baldacchino_sito.png" alt="Baldacchino Grotte Beach" />
+                    </div>
+                    <div class="flex-1 overflow-hidden">
+                        <img class="w-full h-full object-cover" src="/static/img/Servizi/ombrellone_giardino.jpg" alt="Ombrellone Giardino Grotte Beach" />
+                    </div>
+                </div>
+                <!-- Mobile: singola immagine -->
                 <img
-                    class="hidden md:block w-full h-full object-cover"
-                    src="/static/img/Servizi/heroservizitriplo.png"
-                />
-                <!-- Immagine mobile -->
-                <img
-                    class="block md:hidden w-full h-full object-cover"
+                    class="block md:hidden absolute inset-0 w-full h-full object-cover"
                     src="/static/img/Servizi/ombrellone_giardino.jpg"
                 />
                 <div class="absolute inset-0 bg-black/40"></div>
