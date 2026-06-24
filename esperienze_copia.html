@@ -643,19 +643,81 @@
     <script type="application/ld+json">
         {
         "@context": "https://schema.org",
-        "@type": "LocalBusiness",
-        "name": "Grotte Beach",
-        "review": [
+        "@type": "Beach",
+        "name": "Grotte Beach - Servizi Spiaggia",
+        "description": "Servizio stabilimento balneare a Patti (Messina): ombrelloni, lettini, accesso spiaggia e relax nella Riserva Naturale di Tindari.",
+        "url": "https://www.grottebeach.com/servizi",
+
+        "address": {
+            "@type": "98066",
+            "addressLocality": "Patti",
+            "addressRegion": "Messina",
+            "addressCountry": "IT"
+        },
+
+       "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 38.15010331676259,
+            "longitude": 15.022065057725102
+        }
+
+        "telephone": "+39XXXXXXXXXX",
+
+        "priceRange": "€€",
+
+        "openingHoursSpecification": [
             {
-            "@type": "Review",
-            "author": "Giuseppe Alesci",
-            "datePublished": "2025-08",
-            "reviewBody": "Aperitivo con un ottimo rapporto qualità prezzo...",
-            "reviewRating": {
-                "@type": "Rating",
-                "ratingValue": "5"
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday",
+                "Saturday",
+                "Sunday"
+            ],
+            "opens": "08:00",
+            "closes": "20:00"
             }
+        ],
+
+        "isPartOf": {
+            "@type": "WebSite",
+            "name": "Grotte Beach",
+            "url": "https://www.grottebeach.com/"
+        },
+
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Servizi Spiaggia",
+            "itemListElement": [
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                "@type": "Service",
+                "name": "Noleggio Ombrelloni"
+                }
+            },
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                "@type": "Service",
+                "name": "Noleggio Lettini"
+                }
+            },
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                "@type": "Service",
+                "name": "Accesso Spiaggia Attrezzata"
+                }
             }
+            ]
+        },
+
+        "image": [
+            "https://www.grottebeach.com/static/img/og-servizi.jpg"
         ]
         }
     </script>
