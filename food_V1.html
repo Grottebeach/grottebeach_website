@@ -4,34 +4,34 @@
 <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>Grotte Beach | Beach club a Mongiove, Patti (Sicilia)</title>
+    <title>Ristorante sul mare a Mongiove | Food & Aperitivi - Grotte Beach</title>
     <meta name="description"
-          content="Grotte Beach è il beach club sul mare di Mongiove, Patti. Relax, aperitivi, eventi, musica e vista sulle Grotte di Mongiove, nel cuore della costa tirrenica siciliana. Ristorante sul mare Patti" />
+          content="Grotte Beach offre cucina mediterranea sul mare a Mongiove, Patti. Piatti freschi, aperitivi al tramonto e ristorante vista mare in Sicilia." />
 
     <meta name="robots" content="index, follow" />
-    <link rel="canonical" href="https://www.grottebeach.com/" />
+    <link rel="canonical" href="https://www.grottebeach.com/food" />
     <meta name="geo.region" content="IT-ME">
     <meta name="geo.placename" content="Mongiove, Patti">
     <meta name="geo.position" content="38.139;14.969">
     <meta name="ICBM" content="38.139,14.969">
     <meta property="og:site_name" content="Grotte Beach">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Grotte Beach | Beach Club a Mongiove Patti">
+    <meta property="og:title" content="Ristorante sul mare | Grotte Beach Mongiove">
     <meta property="og:description"
-          content="Il beach club sul mare di Mongiove. Aperitivi, relax, eventi e tramonti sulla costa siciliana, ristorante sul mare Patti.">
-    <meta property="og:url" content="https://www.grottebeach.com/">
-    <meta property="og:image" content="https://www.grottebeach.com/static/img/og-cover.jpg">
+          content="Cucina mediterranea, aperitivi e ristorante sul mare a Mongiove, Patti.">
+    <meta property="og:url" content="https://www.grottebeach.com/food">
+    <meta property="og:image" content="https://www.grottebeach.com/static/img/og-food.jpg">
     <meta property="og:locale" content="it_IT">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Grotte Beach | Beach Club a Mongiove Patti">
+    <meta name="twitter:title" content="Ristorante sul mare | Grotte Beach">
     <meta name="twitter:description"
-          content="Beach club sul mare di Mongiove, Patti. Relax, aperitivi, eventi e tramonti in Sicilia.">
+          content="Cucina mediterranea e aperitivi sul mare a Mongiove, Sicilia.">
     <meta name="twitter:image"
-          content="https://www.grottebeach.com/static/img/og-cover.jpg">
+          content="https://www.grottebeach.com/static/img/og-food.jpg">
 
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
@@ -45,6 +45,74 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    <script type="application/ld+json">
+        {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+            "@type": "Restaurant",
+            "@id": "https://www.grottebeach.com/food#restaurant",
+            "name": "Grotte Beach - Food & Ristorante",
+            "url": "https://www.grottebeach.com/food",
+            "servesCuisine": "Mediterranean",
+            "priceRange": "€€",
+            "telephone": "+393891013881",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Patti",
+                "addressRegion": "Messina",
+                "addressCountry": "IT",
+                "postalCode" : "98066"
+            },
+            "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 38.15010331676259,
+                "longitude": 15.022065057725102
+            }
+            },
+            {
+            "@type": "WebPage",
+            "@id": "https://www.grottebeach.com/food#webpage",
+            "url": "https://www.grottebeach.com/food",
+            "name": "Food - Grotte Beach",
+            "isPartOf": {
+                "@id": "https://www.grottebeach.com/#website"
+            },
+            "about": {
+                "@id": "https://www.grottebeach.com/food#restaurant"
+            }
+            },
+            {
+            "@type": "OfferCatalog",
+            "@id": "https://www.grottebeach.com/food#catalog",
+            "name": "Menu Grotte Beach",
+            "itemListElement": [
+                {
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "MenuItem",
+                    "name": "Aperitivi al tramonto"
+                }
+                },
+                {
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "MenuItem",
+                    "name": "Piatti mediterranei"
+                }
+                },
+                {
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "MenuItem",
+                    "name": "Cocktail e drink"
+                }
+                }
+            ]
+            }
+        ]
+        }
+    </script>
 
     <!-- Tailwind Config -->
     <script id="tailwind-config">
@@ -1067,66 +1135,7 @@
     <script>
     AOS.init();
     </script>
-    <script type="application/ld+json">
-        {
-        "@context": "https://schema.org",
-        "@type": "Restaurant",
-        "name": "Grotte Beach Food",
-        "description": "Aperitivi, cocktail e cucina siciliana sul mare a Patti (Messina), all’interno del beach club Grotte Beach nella Riserva Naturale di Tindari.",
-        "url": "https://www.grottebeach.com/food",
-
-        "servesCuisine": [
-            "Italian",
-            "Seafood",
-            "Sicilian"
-        ],
-
-        "priceRange": "€€",
-
-        "address": {
-            "@type": "98066",
-            "addressLocality": "Patti",
-            "addressRegion": "Messina",
-            "addressCountry": "IT"
-        },
-
-        "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": 38.15010331676259,
-            "longitude": 15.022065057725102
-        }
-
-        "telephone": "+39XXXXXXXXXX",
-
-        "openingHoursSpecification": [
-            {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": [
-                "Monday",
-                "Tuesday",
-                "Wednesday",
-                "Thursday",
-                "Friday",
-                "Saturday",
-                "Sunday"
-            ],
-            "opens": "08:00",
-            "closes": "21:00"
-            }
-        ],
-
-        "isPartOf": {
-            "@type": "WebSite",
-            "name": "Grotte Beach",
-            "url": "https://www.grottebeach.com/"
-        },
-
-        "image": [
-            "https://www.grottebeach.com/static/img/og-food.jpg"
-        ]
-        }
-    </script>
-
+    
 
 
 </body>
