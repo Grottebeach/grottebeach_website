@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://grottebeach.com/sitemap.xml
+
+# Evita doppie versioni www / non-www
+Host: grottebeach.com

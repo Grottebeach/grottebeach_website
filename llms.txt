@@ -1,0 +1,23 @@
+# Grotte Beach
+
+Website: https://grottebeach.com
+Type: Beach club / Restaurant / Event venue in Sicily
+
+Description:
+Grotte Beach is a seaside venue in Sicily offering beach services, food & beverage, private events, weddings, and experiential activities.
+
+Primary pages:
+- https://grottebeach.com/ (Home)
+- https://grottebeach.com/servizi (Beach services and amenities)
+- https://grottebeach.com/food (Food and restaurant offering)
+- https://grottebeach.com/esperienze (Experiences and activities)
+- https://grottebeach.com/eventi (Events: weddings, parties, private bookings)
+- https://grottebeach.com/contact (Contact information)
+
+Content usage policy:
+- Public content may be used for search and AI summarization.
+- No personal or private data is present on this site.
+- No restricted or paywalled content exists.
+
+Canonical domain:
+https://grottebeach.com
