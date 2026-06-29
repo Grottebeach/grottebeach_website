@@ -1,0 +1,65 @@
+#cookie-banner {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 9999;
+            display: none;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 1rem;
+            padding: 1rem 1.5rem;
+            background: rgba(15, 23, 42, 0.97);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-top: 1px solid rgba(255,255,255,0.08);
+            box-shadow: 0 -4px 24px rgba(0,0,0,0.25);
+        }
+        #cookie-banner p {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-size: 0.82rem;
+            color: rgba(255,255,255,0.75);
+            line-height: 1.55;
+            margin: 0;
+            flex: 1;
+            min-width: 220px;
+        }
+        #cookie-banner p a {
+            color: #a8caef;
+            text-decoration: underline;
+            white-space: nowrap;
+        }
+        #cookie-banner p a:hover { color: #fff; }
+        .cookie-btn-accept {
+            background: #1a4b9f;
+            color: #fff;
+            border: none;
+            border-radius: 9999px;
+            padding: 0.55rem 1.4rem;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 0.07em;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: background 0.2s;
+            white-space: nowrap;
+        }
+        .cookie-btn-accept:hover { background: #1557c0; }
+        .cookie-btn-close {
+            background: transparent;
+            color: rgba(255,255,255,0.45);
+            border: 1px solid rgba(255,255,255,0.15);
+            border-radius: 9999px;
+            padding: 0.55rem 1.1rem;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-size: 0.75rem;
+            font-weight: 600;
+            letter-spacing: 0.07em;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: all 0.2s;
+            white-space: nowrap;
+        }
+        .cookie-btn-close:hover { border-color: rgba(255,255,255,0.4); color: rgba(255,255,255,0.7); }

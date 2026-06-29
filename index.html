@@ -32,8 +32,8 @@
           content="Beach club sul mare di Mongiove, Patti. Relax, aperitivi, eventi e tramonti in Sicilia.">
     <meta name="twitter:image"
           content="https://www.grottebeach.com/static/img/og-cover.jpg">
-    <!--Cookies-->
-    <script type="text/javascript" src="https://embeds.iubenda.com/widgets/ac635adc-94fc-45bb-8c0b-800701c306ad.js"></script>
+    <!-- Cookie banner styles -->
+    <link rel="stylesheet" href="/static/css/banner.css">
 
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
@@ -1090,8 +1090,8 @@
                         <li><a class="font-['Epilogue'] text-sm font-light text-slate-500 hover:text-[#1a4b9f] transition-colors" href="esperienze.html">Esperienze</a></li>
                         <li><a class="font-['Epilogue'] text-sm font-light text-slate-500 hover:text-[#1a4b9f] transition-colors" href="food.html">Food</a></li>
                         <li><a class="font-['Epilogue'] text-sm font-light text-slate-500 hover:text-[#1a4b9f] transition-colors" href="servizi.html">Servizi</a></li>
-                        <li><a class="font-['Epilogue'] text-sm font-light text-slate-500 hover:text-[#1a4b9f] transition-colors" href="https://www.iubenda.com/privacy-policy/35243840" target="_blank" rel="noopener">Privacy Policy</a></li>
-                        <li><a class="font-['Epilogue'] text-sm font-light text-slate-500 hover:text-[#1a4b9f] transition-colors" href="https://www.iubenda.com/privacy-policy/35243840/cookie-policy" target="_blank" rel="noopener">Cookie Policy</a></li>
+                        <li><a class="font-['Epilogue'] text-sm font-light text-slate-500 hover:text-[#1a4b9f] transition-colors" href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a class="font-['Epilogue'] text-sm font-light text-slate-500 hover:text-[#1a4b9f] transition-colors" href="cookie-policy.html">Cookie Policy</a></li>
                     </ul>
                 </div>
                 <div class="space-y-4">
@@ -1135,10 +1135,36 @@
 
     
 
+    <!-- ===================== COOKIE BANNER ===================== -->
+    <div id="cookie-banner" role="dialog" aria-live="polite" aria-label="Informativa cookie">
+        <p>
+            Questo sito usa esclusivamente cookie tecnici necessari al suo funzionamento e carica risorse da provider terzi (Google Fonts, CDN). Nessun cookie di profilazione o tracciamento.
+            <a href="cookie-policy.html">Cookie Policy</a> &middot; <a href="privacy-policy.html">Privacy Policy</a>
+        </p>
+        <div style="display:flex;gap:0.6rem;align-items:center;flex-shrink:0;">
+            <button class="cookie-btn-close" id="cookie-close" aria-label="Chiudi il banner">Chiudi</button>
+            <button class="cookie-btn-accept" id="cookie-accept">Ho capito</button>
+        </div>
+    </div>
+
     <script src="static/js/index.js"></script>
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
     <script>
     AOS.init();
+    // Cookie banner
+    (function () {
+        var banner = document.getElementById('cookie-banner');
+        if (!banner) return;
+        if (!localStorage.getItem('gb_cookie_consent')) {
+            banner.style.display = 'flex';
+        }
+        function dismiss() {
+            localStorage.setItem('gb_cookie_consent', '1');
+            banner.style.display = 'none';
+        }
+        document.getElementById('cookie-accept').addEventListener('click', dismiss);
+        document.getElementById('cookie-close').addEventListener('click', dismiss);
+    })();
     </script>
     <script type="application/ld+json">
         {
